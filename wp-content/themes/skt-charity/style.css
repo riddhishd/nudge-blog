@@ -16,7 +16,7 @@ SKT Charity WordPress Theme is released under the terms of GNU GPL
 
 SKT Charity is based on underscores theme.
 */
-body{ margin:0; padding:0;line-height:20px; font-size:13px; color:#5c5c5c; font-family:Arial, Helvetica, sans-serif; box-sizing:border-box;}
+body{ margin:0; padding:0;line-height:20px; font-size:13px; color:#b2b1b1; font-family:Arial, Helvetica, sans-serif; box-sizing:border-box;}
 *{ margin:0; padding:0; outline:none;}
 img{ border:none; margin:0; padding:0; height:auto}
 .wp-caption, .wp-caption-text, .sticky, .gallery-caption, .aligncenter{ margin:0; padding:0;}
@@ -167,7 +167,7 @@ a.ReadMore:hover{ background-color:#d72503; color:#fff; }
 /* = sidebar
 -------------------------------------------------------------- */
 #sidebar{ width:330px; float:right;}
-aside.widget{margin-bottom:30px; background-color:#f6f4f4; padding:20px; border:1px solid #edecec;}
+aside.widget{margin-bottom:30px; background-color:#565757; padding:20px; border:1px solid #edecec;}
 aside.widget ul{ list-style:disc; }
 h3.widget-title{ background-color:#f25f43; padding:12px 15px; margin-bottom:1px; color:#fff;}
 h3.widget-title a{color:#FFF;}
