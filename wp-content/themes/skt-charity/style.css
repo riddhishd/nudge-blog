@@ -1,5 +1,4 @@
-/*
-Theme Name: SKT Charity
+me: SKT Charity
 Theme URI: http://www.sktthemes.net/shop/skt-charity/
 Author: SKT Themes
 Author URI: http://www.sktthemes.net
@@ -76,8 +75,8 @@ ol.comment-list li{ list-style:none; margin-bottom:5px;}
 .widget-right{float:right; padding:0 14px; background-color:#f25f43;}
 .widget-right .textwidget{ line-height:52px;}
 
-.headerinfo { font:600 14px/24px 'Roboto'; color:#fff; }
-.headerinfo a {color:#fff; }
+.headerinfo { font:600 14px/24px 'Roboto'; color:#000; }
+.headerinfo a {color:#000; }
 .headerinfo span{  font-size:14px;}
 .headerinfo .phoneno{ background:url(images/icon-phone.png) no-repeat left 4px; padding:0 0 0 20px; margin-right:20px;}
 .headerinfo .address{ background:url(images/location-icon.png) no-repeat left 4px; padding:0 0 0 15px;}
@@ -169,8 +168,8 @@ a.ReadMore:hover{ background-color:#d72503; color:#fff; }
 #sidebar{ width:330px; float:right;}
 aside.widget{margin-bottom:30px; background-color:#b2b1b1; padding:20px; border:1px solid #edecec;}
 aside.widget ul{ list-style:disc; }
-h3.widget-title{ background-color:#f25f43; padding:12px 15px; margin-bottom:1px; color:#fff;}
-h3.widget-title a{color:#FFF;}
+h3.widget-title{ background-color:#f25f43; padding:12px 15px; margin-bottom:1px; color:#000000;}
+h3.widget-title a{color:#000000;}
 #sidebar ul li{list-style:none; word-wrap:break-word; border-bottom:1px dashed #d0cfcf; display:block; line-height:35px;}
 #sidebar ul li a{ background:url(images/sidebar-arrow.png) no-repeat 0 14px; padding:10px 0 10px 20px; color:#3b3b3b;}
 #sidebar ul li a:hover{ color:#34c6f6;}
