@@ -1,0 +1,198 @@
+html {
+	box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after { /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+	box-sizing: inherit;
+}
+
+body {
+	background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+}
+
+a {
+	color: $color__link;
+	text-decoration: none;
+	@include fade-text(.5s);
+
+	&:visited {
+		color: $color__link-visited;
+	}
+	&:hover,
+	&:focus,
+	&:active {
+		color: $color__link-hover;
+	}
+	&:focus {
+		outline: thin dotted;
+	}
+	&:hover,
+	&:active {
+		outline: 0;
+	}
+}
+
+blockquote, q {
+	color: $color__link;
+	font: italic 1.111111111em/1.4  $font__quote;// 20/18
+	line-height: 1.7;
+	quotes: "" "";
+	margin: 2em 0;
+	text-align: center;
+
+	@media screen and (min-width: $size__site-med){
+		font-size: 1.555555556em; // 28/18
+		margin-left: -15%;
+		width: 130%;
+	}
+
+	blockquote {
+		font-size: 1em;
+	}
+
+	cite {
+		color: $color__meta;
+		font-family: $font__main;
+		font-style: normal;
+		font-size: .5625em; // 18/32
+		margin-top: -1em;
+		
+		&:before {
+			content: "— ";
+		}
+	}
+}
+
+.sidebar-right,
+.sidebar-left {
+
+	blockquote, q {
+		
+		@media screen and (min-width: $size__site-reg){
+			margin-left: 0;
+			width: 100%;
+		}
+	}
+}
+
+q  {
+	font-size: 1em;
+	margin: 0;
+	width: inherit;
+}
+
+hr {
+	background-color: $color__background-hr;
+	border: 0;
+	height: 1px;
+	margin-bottom: 1.5em;
+}
+
+ul, ol {
+	margin: 0 0 1.5em 2em;
+	padding-left: 0;
+}
+
+ul {
+	list-style: disc;
+}
+
+ol {
+	list-style: decimal;
+}
+
+li > ul,
+li > ol {
+	margin-bottom: 0;
+	margin-left: 1.5em;
+}
+
+dt {
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 1.5em 1.5em;
+}
+
+img {
+	height: auto; /* Make sure images are scaled correctly. */
+	max-width: 100%; /* Adhere to container width. */
+	position: relative;
+	z-index: 1;
+}
+
+
+dt {
+	float: left;
+	clear: left;
+	width: 30%;
+	text-align: right;
+	font-weight: bold;
+}
+
+dd {
+	margin: 0 0 0 32%;
+	padding: 0 0 1.5em 0;
+}
+
+// Tables
+
+table {
+	background: $color__background-hr;
+	border: 1px solid $color__background-hr;
+	font-size: .888888889em;
+	margin: 0 0 3.75em;
+	width: 100%;
+
+	a {
+		color: $color__text-main;
+	}
+
+}
+
+table th {
+	color: $color__text-main;
+	padding:21px 25px 22px 25px;
+	border-top:1px solid $color__background-hr;
+	border-bottom:1px solid $color__background-hr;
+	background: darken($color__background-screen, 5%);
+
+}
+
+table th:first-child {
+	text-align: left;
+	padding-left: 1.11em;
+}
+
+table tr {
+	text-align: center;
+	padding-left: 1.11em;
+}
+
+table td:first-child {
+	text-align: left;
+	padding-left:20px;
+	border-left: 0;
+}
+
+table td {
+	color: $color__text-main;
+	padding: 1em;
+	border-top: 1px solid #ffffff;
+	border-bottom:1px solid $color__background-hr;
+	border-left: 1px solid $color__background-hr;
+
+	background: $color__background-alt;
+}
+
+
+table tr:last-child td {
+	border-bottom:0;
+}
+
+table tr:hover td {
+	background: $color__background-screen;
+}

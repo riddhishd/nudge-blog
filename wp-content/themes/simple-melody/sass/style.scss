@@ -1,0 +1,116 @@
+/*
+Theme Name: Simple Melody
+Theme URI: http://themes.nudgethemes.com/simple-melody/
+Author: Nudge Themes
+Author URI: http://nudgethemes.com
+Description: Give your readers visual rhythm and harmony with Simple Melody. No matter what screen or device you are using, your images will look amazing with this perfectly spaced design.
+Version: 1.0.7
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: simple-melody
+Tags: white, light, pink, one-column, two-columns, left-sidebar, right-sidebar, responsive-layout, custom-menu, editor-style, rtl-language-support, sticky-post, theme-options, translation-ready, photoblogging, featured-images, threaded-comments
+*/
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+1.0 Normalize
+2.0 Typography
+	2.1 Headings
+	2.2 Copy
+3.0 Elements
+4.0 Forms
+	4.1 Buttons
+	4.2 Fields
+5.0 Navigation
+	5.1 Menus
+	5.2 Social Media
+	5.3 Post, Page, Comments
+6.0 Accessibility
+7.0 Alignments
+8.0 Clearings
+9.0 Widgets
+10.0 Site
+    10.1 Header
+	10.2 Structure
+	10.3 Posts and pages
+	10.4 Blog & Archive
+	10.5 Single, Page and Search
+	10.6 Single
+	10.7 Search
+	10.8 404
+	10.9 Asides
+	10.10 Comments
+	10.11 Footer
+12.0 Jetpack Styles
+	12.1 Contact Form
+	12.2 Infinite Scroll
+	12.3 Portfolio
+	12.4 Subscription Form
+	12.5 Related Posts
+13.0 Media
+	13.1 Captions
+	13.2 Galleries
+--------------------------------------------------------------*/
+@import "variables-site/variables-site";
+@import "mixins/mixins-master";
+
+/*--------------------------------------------------------------
+1.0 Normalize
+--------------------------------------------------------------*/
+@import "normalize";
+
+/*--------------------------------------------------------------
+2.0 Typography
+--------------------------------------------------------------*/
+@import "typography";
+
+/*--------------------------------------------------------------
+3.0 Elements
+--------------------------------------------------------------*/
+@import "elements";
+
+/*--------------------------------------------------------------
+4.0 Forms
+--------------------------------------------------------------*/
+@import "forms";
+
+/*--------------------------------------------------------------
+5.0 Navigation
+--------------------------------------------------------------*/
+@import "navigation";
+
+/*--------------------------------------------------------------
+6.0 Accessibility
+--------------------------------------------------------------*/
+@import "modules/accessibility";
+
+/*--------------------------------------------------------------
+7.0 Alignments
+--------------------------------------------------------------*/
+@import "modules/alignments";
+
+/*--------------------------------------------------------------
+8.0 Clearings
+--------------------------------------------------------------*/
+@import "modules/clearings";
+
+/*--------------------------------------------------------------
+9.0 Widgets
+--------------------------------------------------------------*/
+@import "widgets";
+
+/*--------------------------------------------------------------
+10.0 Site
+--------------------------------------------------------------*/
+@import "site";
+
+/*--------------------------------------------------------------
+12.0 Jetpack Styles
+--------------------------------------------------------------*/
+@import "jetpack";
+
+/*--------------------------------------------------------------
+13.0 Media
+--------------------------------------------------------------*/
+@import "media";

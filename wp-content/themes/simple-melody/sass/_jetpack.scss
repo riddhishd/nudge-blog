@@ -1,0 +1,177 @@
+/*--------------------------------------------------------------
+12.1 Contact Form
+--------------------------------------------------------------*/
+.contact-form {
+	margin: auto;
+
+	> div {
+		margin-bottom: 1.25em;
+	}
+
+	&.commentsblock {
+
+		.grunion-field-label {
+			span {
+				font-size: .666666667em; // 12/18
+			}
+		}
+
+		input[type="text"], 
+		input[type="email"],
+		textarea {
+			width: 100%;
+		}
+
+		label {
+			font-weight: normal;
+		}
+	}
+}	
+
+
+
+/*--------------------------------------------------------------
+12.2 Infinite Scroll
+--------------------------------------------------------------*/
+/* Globally hidden elements when Infinite Scroll is supported and in use. */
+.infinite-scroll .posts-navigation, /* Older / Newer Posts Navigation (always hidden) */
+.infinite-scroll.neverending .site-footer { /* Theme Footer (when set to scrolling) */
+	display: none;
+}
+
+/* When Infinite Scroll has reached its end we need to re-display elements that were hidden (via .neverending) before. */
+.infinity-end.neverending .site-footer {
+	display: block;
+}
+
+.site-main #infinite-handle {
+	margin: 3.75em 0 0;
+	overflow: hidden;
+	padding: 1em 0;
+	text-align: center;
+	width: 100%;
+
+	span {
+		background-color: $color__background-alt;
+		border: 1px solid $color__background-alt;
+		color: $color__link;
+		font-size: .833333333em; // 15/18
+		padding: 1em 1.5em;
+
+		&:hover {
+			background-color: #fff;
+			border: 1px solid $color__link-hover;
+			color: $color__link-hover;
+		}
+
+		button {
+			text-transform: none;
+		}
+	}
+}
+
+.infinite-loader .spinner{
+	margin: auto;
+}
+
+#infinite-footer {
+	z-index: 1;
+}
+
+/*--------------------------------------------------------------
+12.3 Portfolio
+--------------------------------------------------------------*/
+.post-type-archive-jetpack-portfolio {
+	.hentry { 
+
+		@media screen and (min-width: $size__site-med){	
+			background-color: $color__background-alt;
+			margin: 0  0 1.875em 0;
+			position: relative;
+			float: left;
+			margin-left: 2.5%;
+			margin-right: 0;
+			position: relative;
+			width: 31%;
+			@include fade(.5s);
+
+			&:nth-of-type(3n+1) {
+				margin-left: 0;
+			}
+		}// @media med-screen
+
+		.entry-header {
+			.entry-title{
+				font-size: 2em; 
+				margin: 0;
+			}
+		}// .entry-header
+
+		&.has-post-thumbnail {
+			background-color: $color__background-alt;
+
+			@media screen and (min-width: $size__site-med){
+				background-color: #fff;
+			}
+		}
+
+		&.page .entry-header{
+			margin: 0;
+		}
+	}// .hentry	
+}
+
+.single-jetpack-portfolio {
+
+	.tags-links {
+		a {
+			background-color: $color__background-alt;
+			border: 1px solid $color__background-alt;
+			display: inline-block;
+			margin-bottom: 5px;
+			padding: 3px 10px;
+			@include fade-text(.3s);
+
+			&:hover {
+				background-color: transparent;
+				border-color: $color__link-hover;
+				border-bottom-width: 1px;
+			}
+		}
+	}
+}
+
+.attachment-post-feed-thumb {
+	background-color: #fff;
+	display: block;
+	width: 100%;
+	@include fade(.5s);
+}
+
+/*--------------------------------------------------------------
+12.4 Subscription Form
+--------------------------------------------------------------*/
+p.comment-subscription-form {
+	margin: 1.5em 0 0;
+
+	+ p.comment-subscription-form {
+		margin-top: 1em;
+	}
+}
+
+
+/*--------------------------------------------------------------
+12.5 Related Posts
+--------------------------------------------------------------*/
+.site-main div#jp-relatedposts {
+	border: 1px solid $color__background-alt;
+	border-width: 1px 0;
+	margin: 5.625em 0;
+	padding: 1.875em 0;
+
+	h3.jp-relatedposts-headline em::before {
+		border-top: none;
+	}
+}
+
+

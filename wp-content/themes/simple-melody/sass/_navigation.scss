@@ -1,0 +1,712 @@
+/*--------------------------------------------------------------
+5.1 Menus
+--------------------------------------------------------------*/
+.main-navigation {
+	background-color: $color__background-button;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	text-transform: uppercase;
+	width: 100%;
+	z-index: 3;
+
+	@media screen and (min-width: $size__site-med) {
+		background-color: transparent;
+		clear: right;
+		display: inline-block;
+		float: right;
+		line-height: 4;
+		overflow: visible;
+		position: static;
+		width: 70%;
+	}
+
+	.menu,
+	> ul.menu {
+		margin-top: 2.2em;
+
+		@media screen and (min-width: $size__site-med) {
+			margin-top: 0;
+			padding-top: 0;
+		}
+	}
+
+	ul {
+		background-color: $color__background-alt;
+		display: none;
+		list-style: none;
+		margin: 0;
+
+		@media screen and (min-width: $size__site-med) {
+			background-color: transparent;
+			display: block;
+			float: right;
+			text-align: right;
+			width: 90%;
+		}
+
+		.sub-menu,
+		.children {
+			font-size: 1em;
+
+			@media screen and (min-width: $size__site-med) {
+				background-color: $color__background-alt;
+				float: left;
+				position: absolute;
+				top: 4em;
+				left: -999em;
+				text-align: center;
+				width: inherit;
+				z-index: 99999;
+			}
+
+			ul {
+				@media screen and (min-width: $size__site-med) {
+					left: -999em;
+					top: -18px;
+				}
+			}
+
+			li {
+				border-bottom: 1px solid #fff;
+				line-height: 2;
+
+				@media screen and (min-width: $size__site-med) {
+					//line-height: 3;
+				}
+
+				&:first-child {
+					border-top: 1px solid #fff;
+					margin-top: 1em;
+
+					@media screen and (min-width: $size__site-med) {
+						border-top: none;
+						margin-top: 0;
+					}
+				}
+
+				&:hover > ul,
+				&.focus > ul {
+					background-color: $color__background-alt;
+					right: 100%;
+					top: 0;
+				}
+
+				&:last-child {
+					border-bottom: none;
+					padding-bottom: 0;
+
+					@media screen and (min-width: $size__site-med) {
+						padding-bottom: .75em;
+					}
+				}
+
+				a {
+
+					@media screen and (min-width: $size__site-med) {
+						&:hover {
+							border-color: transparent;
+						}
+					}
+
+					&:after,
+					&:hover:after {
+						border-bottom: transparent;
+					}
+				}
+			}
+
+			@media screen and (min-width: $size__site-med) {
+				a {
+					width: 200px;
+				}
+			}
+		}// .sub-menu
+
+		li:hover > ul,
+		li.focus > ul {
+			left: auto;
+			right: 0px;
+		}
+
+		> li {
+			float: none;
+
+			@media screen and (min-width: $size__site-med) {
+				display: inline-block;
+			}
+		}
+	} // ul
+
+	// Just want effect on first level li
+	ul > li {
+
+		@media screen and (min-width: $size__site-med) {
+			> a {
+				position: relative;
+
+				&::after {
+					border-bottom: 2px solid $color__link-hover;
+					content: " ";
+					height: 2px;
+					opacity: 0;
+					position: absolute;
+					top: 100%;
+					left: 0;
+					transform: translateY(5px);
+					@include fade-text(.3s);
+					width: 100%;
+				}
+
+				&:hover:after {
+					height: 2px;
+					transform: translateY(0); 
+					opacity: 1;
+				}
+			}//a
+		}//@media-med
+	}// > ul > li
+
+	li {
+		border-bottom: 1px solid #fff;
+		font-size: 0.722222222em;
+		padding: .75em 0 .75em 2em;
+
+		@media screen and (min-width: $size__site-med) {
+			border-bottom: none;
+			float: left;
+			padding: .75em 2em;
+		}
+
+		&.active-sub-menu {
+			background-color: $color__background-alt;
+
+			@media screen and (min-width: $size__site-med) {
+				background-color: transparent;
+			}
+		}
+
+		li {
+			font-size: 1em;
+		}
+	}// li
+
+	a {
+		display: block;
+		text-decoration: none;
+		word-wrap: break-word;
+
+		@media screen and (min-width: $size__site-med) {
+			@include fade-text(.3s);
+		}
+
+		&:hover,
+		&:focus{
+			border-color: $color__link-hover;
+			color: $color__link-hover;
+		}
+	}// a
+
+	li.menu-item-has-children,
+	li.page_item_has_children {
+		position: relative;
+
+		&:after {
+			content: "\f0d7";
+			color: $color__link;
+			cursor: pointer;
+			font-family: "FontAwesome";
+			padding: 1em;
+			position: absolute;
+			top: -2px;
+			right: 0;
+		}
+
+		.dropdown-toggle {
+			background-color: transparent;
+			line-height: 1;
+			position: absolute;
+			right: 0;
+			top: 0px;
+			z-index: 1;
+
+			@media screen and (min-width: $size__site-med) {
+				display: none;
+			}
+		}
+	}
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a {
+		color: $color__link-hover;
+	}
+
+	> .current_page_item > a,
+	> .current-menu-item > a,
+	> .current_page_ancestor > a {
+		color: $color__link-hover;
+
+		@media screen and (min-width: $size__site-med) {
+			border-bottom: 2px solid $color__link-hover;
+		}
+
+		&:hover:after {
+			border-bottom: transparent;
+		}
+	}
+
+	&.toggled > ul,
+	&.toggled > ul li.focus,
+	&.toggled > .menu .nav-menu {
+		display: block;
+
+		@media screen and (min-width: $size__site-med) {
+			display: inline-block;
+		}
+		
+	}
+}
+
+/* Small menu. */
+.menu-toggle {
+	display: block;
+	float: left;
+
+	i {
+		margin-right: 5px;
+	}
+}
+
+@media screen and (min-width: $size__site-med) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+}
+
+/*--------------------------------------------------------------
+5.2 Social Media
+--------------------------------------------------------------*/
+.social-media,
+.widget .menu {
+	list-style: none;
+	margin-left: 0;
+
+	li {
+		display: inline-block;
+		margin-right: 15px;
+	}
+
+	a {
+		display: block;
+		padding: 10px 10px 10px 0;
+
+		&:before {
+		font-family: "FontAwesome";
+		speak: none;
+		line-height: 1;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+		float: left;
+		font-size: 20px;
+		margin-right: 5px;
+		
+		}
+
+		&[href*="facebook.com"] {
+			&:before {
+				content: '\f082';
+			}
+
+			&:hover {
+				color: #3b5998;
+			}
+		}
+
+		&[href*="twitter.com"] {
+			&:before {
+				content: '\f099';
+			}
+
+			&:hover {
+				color: #00aced;
+			}
+		}
+
+		&[href*="plus.google.com"] {
+			&:before {
+				content: '\f0d5 ';
+			}
+
+			&:hover {
+				color: #dd4b39;
+			}
+		}
+
+		&[href*="pinterest.com"] {
+			&:before {
+				content: '\f0d2';
+			}
+
+			&:hover {
+				color: #cb2027;
+			}
+		}
+
+		&[href*="tumblr.com"] {
+			&:before {
+				content: '\f173';
+			}
+
+			&:hover {
+				color: #32506d;
+			}
+		}
+
+		&[href*="linkedin.com"] {
+			&:before {
+				content: '\f08c';
+			}
+
+			&:hover {
+				color: #007bb6;
+			}
+		}
+
+		&[href*="flickr.com"] {
+			&:before {
+				content: '\f16e';
+			}
+
+			&:hover {
+				color: #ff0084;
+			}
+		}
+
+		&[href*="instagram.com"] {
+			&:before {
+				content: '\f16d';
+			}
+
+			&:hover {
+				color: #517fa4;
+			}
+		}
+
+		&[href*="dribbble.com"]{
+			&:before {
+				content: '\f17d';
+			}
+
+			&:hover {
+				color: #ea4c89;
+			}
+		}
+
+		&[href*="behance.net"] {
+			&:before {
+				content: '\f1b4';
+			}
+
+			&:hover {
+				color: #1769ff;
+			}
+		}
+
+		&[href*="youtube.com"] {
+			&:before {
+				content: '\f167';
+			}
+
+			&:hover {
+				color: #bb0000;
+			}
+		}
+
+		&[href*="vimeo.com"] {
+			&:before {
+				content: '\f194';
+			}
+
+			&:hover {
+				color: #aad450;
+			}
+		}
+
+		&[href*="vine.co"] {
+			&:before {
+				content: '\f1ca';
+			}
+
+			&:hover {
+				color: #00bf8f;
+			}
+		}
+
+		&[href*="stumbleupon.com"] {
+			&:before {
+				content: '\f1a4';
+			}
+
+			&:hover {
+				color: #fffc00;
+			}
+		}
+
+		&[href*="reddit.com"] {
+			&:before {
+				content: '\f1a1';
+			}
+
+			&:hover {
+				color: #5f99cf;
+			}
+		}
+
+		&[href*="spotify.com"] {
+			&:before {
+				content: '\f1bc';
+			}
+
+			&:hover {
+				color: #2ebd59;
+			}
+		}
+
+		&[href*="lastfm.com"] {
+			&:before {
+				content: '\f202';
+			}
+
+			&:hover {
+				color: #d51007;
+			}
+		}
+
+		&[href*="soundcloud.com"] {
+			&:before {
+				content: '\f1be';
+			}
+
+			&:hover {
+				color: #ff8800;
+			}
+		}
+
+		&[href*="github.com"] {
+			&:before {
+				content: '\f09b';
+			}
+
+			&:hover {
+				color: #4183c4;
+			}
+		}
+
+		&[href*="bitbucket.com"] {
+			&:before {
+				content: '\f171';
+			}
+
+			&:hover {
+				color: #205081;
+			}
+		}
+		&[href*="/contact"] {
+			&:before {
+				content: '\f0e0';
+			}
+		}
+	}
+} // .social-media
+
+/*--------------------------------------------------------------
+5.3 Post, Page, Comments
+--------------------------------------------------------------*/
+/* Main posts + comment navigation */
+.posts-navigation,
+.comment-navigation {
+	margin: 0 auto;
+	overflow: hidden;
+	padding: 1.875em 0 0;
+
+	@media screen and (min-width: $size__site-sml) {
+		padding: 3.75em 0 0;
+	}
+
+	.nav-previous,
+	.nav-next { 
+		background-color: $color__background-alt;
+		border: 1px solid $color__background-alt;
+		font-size: .888888889em;
+		float: left;
+		text-align: center;
+		width: inherit;
+
+		@media screen and (min-width: $size__site-sml) {
+			background-color: transparent;
+		}
+
+		&:hover {
+			background-color: transparent;
+			border-color: $color__link-hover;
+		}
+
+		a {
+			background-color: $color__background-alt;
+			color: $color__link;
+			display: inline-block;
+			font-size: .833333333em; // 15/18
+			padding: 1em 1.5em;
+			@include fade-text(.3s);
+
+			&:hover {
+				background-color: transparent;
+				color: $color__link-hover;
+				@include slide(-.5em);
+			}
+		}
+	}
+
+	.nav-previous {
+		a {
+
+			&:before {
+				content: "\2190\A";
+			}
+		}
+	}
+
+	.nav-next {
+		float: right;
+
+		a {
+
+			&:hover {
+				@include slide(.5em);
+			}
+
+			&:after {
+				content: "\A\2192";
+			}
+		}
+	}
+}
+
+/* Comment navigation */
+#comment-nav-above{
+	padding-top: 2.8125em;
+}
+#comment-nav-below {
+	padding: 0  0 3.75em;
+}
+
+/* Single post navigation */
+.post-navigation {
+	margin: 0 auto 5.625em;
+
+	.nav-links {
+		text-align: center;
+	}
+
+	.nav-previous,
+	.nav-next { 
+		background-color: $color__background-alt;
+		border: 1px solid #ebebeb;
+		font-family: $font__main;
+		position: relative;
+		text-align: center;
+		@include fade-text(.3s);
+
+		@media screen and (min-width: $size__site-med) {
+			float: left;
+			vertical-align: top;
+			width: 49%;
+		}
+
+		&:hover {
+			background-color: transparent;
+			border-color: $color__link-hover;
+
+			a {
+				color: $color__link-hover;
+			}
+		}
+		
+		span {
+			@include fade-text(.5s);
+		}
+
+		&:hover {
+			background-color: transparent;
+
+			span { 
+				color: $color__link-hover;
+				@include slide(-.5em);
+			}
+		}
+
+		a {
+			color: $color__link;
+			font-family: $font__header;
+			font-size: 1.333333333em; // 24/18 
+			line-height: 1;
+			display: block;
+			padding: 1.875em;
+			word-wrap: break-word;
+
+			@media screen and (min-width: $size__site-med) {
+				padding: 1em;
+			}
+
+		}
+	}
+
+	.nav-previous {
+		margin-bottom: 1.875em;
+
+		@media screen and (min-width: $size__site-med) {
+			margin-bottom: 0;
+		}
+	}
+
+	.nav-next {
+
+		@media screen and (min-width: $size__site-med) {
+			float: right;
+		}
+
+		&:hover {
+			color: inherit;
+
+			span { 
+				@include slide(.5em);
+			}
+		}
+	}
+
+	.meta-nav {
+		color: $color__meta;
+		display: block;
+		font-family: $font__main;
+		font-size: .535714286em; // 15/28
+		margin-bottom: 20px;
+	}
+
+	.nav-previous .meta-nav:before {
+		content: "\2190\A";
+	}
+
+	.nav-next .meta-nav:after {
+		content: "\A\2192";
+	}
+
+	.attachment-post-navigation {
+		opacity: 0;
+		@include fade(.5s);
+	}
+} //.post-navigation

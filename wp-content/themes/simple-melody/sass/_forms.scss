@@ -1,0 +1,71 @@
+/*--------------------------------------------------------------
+4.1 Buttons
+--------------------------------------------------------------*/
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: none;
+	border-color: $color__border-button;
+	background: $color__background-button;
+	color: #fff;
+	@include font-size(.722222222); // 13/18
+	line-height: 1;
+	padding: 1.1em 1.5em 0.875em;
+	text-transform: uppercase;
+	-webkit-appearance: none;
+	-webkit-border-radius:0; 
+	border-radius:0;
+
+	&:focus {
+		box-shadow: 0 0 5px 1px rgba(219,98,107,0.9);
+	}
+}
+
+/*--------------------------------------------------------------
+4.2 Fields
+--------------------------------------------------------------*/
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+textarea {
+	background-color: $color__background-screen;
+	color: $color__text-input;
+	border: none;
+	width: 100%;
+	-webkit-appearance: none;
+	-webkit-border-radius:0; 
+	border-radius:0;
+
+	&:focus {
+		color: $color__text-input-focus;
+		box-shadow: 0 0 5px 1px rgba(219,98,107,0.9);
+	}
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"] {
+	padding: 3px;
+}
+
+input[type="search"] {
+	background-color: #fff;
+	font-size: .944444em;
+}
+
+textarea {
+	padding-left: 3px;
+	width: 100%;
+}
+
+label {
+	font-weight: normal;
+}
+.post-password-form input[type="password"] {
+	margin-bottom: 30px;
+}

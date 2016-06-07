@@ -1,0 +1,76 @@
+/*
+Theme Name: Simple Melody
+
+Adding support for language written in a Right To Left (RTL) direction is easy -
+it's just a matter of overwriting all the horizontal positioning attributes
+of your CSS stylesheet in a separate stylesheet file named rtl.css.
+
+http://codex.wordpress.org/Right_to_Left_Language_Support
+
+*/
+
+body {
+	direction: rtl;
+	unicode-bidi: embed;
+}
+
+.site-branding {
+	float: right;
+}
+
+.entry-meta span {
+	display: inline-block;
+	direction: rtl;
+}
+.edit-link {
+	margin: 10px 10px 0 0;
+}
+
+.main-navigation {
+	float: left;
+	clear: left;
+}
+.main-navigation ul {
+	float: left;
+}
+
+.page-template-page-homepage .hentry .entry-header {
+	text-align: right;
+}
+
+.comment-navigation .nav-previous, 
+.posts-navigation .nav-previous,
+.post-navigation .nav-previous  {
+	float: right;
+	text-align: right;
+}
+ 
+.comment-navigation .nav-next, 
+.posts-navigation .nav-next,
+.post-navigation .nav-next {
+	float: left;
+	text-align: left;
+}
+
+.post-navigation .nav-next,
+.post-navigation .nav-previous {
+	text-align: center;
+}
+.posts-navigation .nav-previous a:before {
+	content: "\2192\A";
+
+}
+.posts-navigation .nav-next a:after {
+	content: "\A\2190";
+}
+
+.post-navigation .nav-previous .meta-nav:before {
+	content: "\2192\A";
+}
+.post-navigation .nav-next .meta-nav:after {
+	content: "\A\2190";
+}
+
+.footer-block {
+	float: right;
+}

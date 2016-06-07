@@ -1,0 +1,384 @@
+# Copyright (C) 2015 Automattic
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Simple Melody theme\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tags/_s\n"
+"POT-Creation-Date: 2015-10-02 18:25-0500\n"
+"PO-Revision-Date: 2015-10-02 18:26-0500\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.7.4\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-KeywordsList: _e;__;_x;esc_attr_e;esc_html__;esc_html_x\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:45
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr ""
+
+#: comments.php:41 comments.php:63
+msgid "Older Comments"
+msgstr ""
+
+#: comments.php:42 comments.php:64
+msgid "Newer Comments"
+msgstr ""
+
+#: footer.php:49
+msgid "http://wordpress.org/"
+msgstr ""
+
+#: footer.php:49
+#, php-format
+msgid "Proudly powered by %s"
+msgstr ""
+
+#: footer.php:51
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: functions.php:59
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:89
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:99
+msgid "Footer Widget Left"
+msgstr ""
+
+#: functions.php:109
+msgid "Footer Widget Center"
+msgstr ""
+
+#: functions.php:119
+msgid "Footer Widget Right"
+msgstr ""
+
+#: functions.php:146
+msgid "expand child menu"
+msgstr ""
+
+#: functions.php:147
+msgid "collapse child menu"
+msgstr ""
+
+#: functions.php:200 functions.php:202 functions.php:204
+msgid "on"
+msgstr ""
+
+#: functions.php:253 functions.php:273
+#, php-format
+msgid "Read more %s"
+msgstr ""
+
+#: inc/admin/start-page/start-page.php:32
+msgid "Theme Sart Page"
+msgstr ""
+
+#: inc/admin/start-page/start-page.php:44
+#, php-format
+msgid "Welcome to %1s %2s"
+msgstr ""
+
+#: inc/admin/start-page/start-page.php:45
+#, php-format
+msgid "Thanks for downloading %s!"
+msgstr ""
+
+#: inc/admin/start-page/start-page.php:47
+#: inc/admin/start-page/start-page.php:67
+msgid "Upgrade to Melody"
+msgstr ""
+
+#: inc/admin/start-page/start-page.php:48
+msgid "See what you'll get"
+msgstr ""
+
+#: inc/admin/start-page/start-page.php:51
+#, php-format
+msgid "Getting Started with %s"
+msgstr ""
+
+#: inc/admin/start-page/start-page.php:61
+msgid "Documentation"
+msgstr ""
+
+#: inc/admin/start-page/start-page.php:62
+msgid ""
+"Although setup is quite easy, take a look at Melody's documentation for help "
+"on getting setup."
+msgstr ""
+
+#: inc/admin/start-page/start-page.php:63
+msgid "Go to the Documentation"
+msgstr ""
+
+#: inc/admin/start-page/start-page.php:73
+msgid "Featured Posts"
+msgstr ""
+
+#: inc/admin/start-page/start-page.php:74
+msgid ""
+"Melody's design is simple yet elegant. Pick your three favorite posts and "
+"highlight them as featured posts."
+msgstr ""
+
+#: inc/admin/start-page/start-page.php:80
+msgid "Post Grid"
+msgstr ""
+
+#: inc/admin/start-page/start-page.php:81
+msgid "Choose between Melody's two or three post grid layout."
+msgstr ""
+
+#: inc/admin/start-page/start-page.php:87
+msgid "Custom Colors & CSS"
+msgstr ""
+
+#: inc/admin/start-page/start-page.php:88
+msgid ""
+"Melody lets you easily customize your site's colors. If you know a bit of "
+"CSS, you can even take it a little further using the Custom CSS area."
+msgstr ""
+
+#: inc/admin/start-page/start-page.php:94
+msgid "Site Logo"
+msgstr ""
+
+#: inc/admin/start-page/start-page.php:95
+msgid ""
+"With the help of Jetpack, you can easily brand your site by adding your logo "
+"via the Customizer menu."
+msgstr ""
+
+#: inc/admin/start-page/start-page.php:101
+msgid "Special Features"
+msgstr ""
+
+#: inc/admin/start-page/start-page.php:102
+msgid ""
+"Give your content a little extra visual elegance with sub-headings and drop "
+"caps. And give your most impressive images the attention and screen space "
+"they deserve. Take a look at Melody's documentation for how to easily create "
+"these styles."
+msgstr ""
+
+#: inc/customizer.php:21
+msgid "Theme Options"
+msgstr ""
+
+#: inc/customizer.php:28 inc/template-tags.php:138
+msgid " "
+msgstr ""
+
+#: inc/customizer.php:36
+msgid "Intro text"
+msgstr ""
+
+#: inc/customizer.php:53
+msgid "Intro text position"
+msgstr ""
+
+#: inc/customizer.php:57 inc/customizer.php:79 inc/customizer.php:100
+#: inc/customizer.php:103
+msgid "Left"
+msgstr ""
+
+#: inc/customizer.php:58 inc/customizer.php:101
+msgid "Center"
+msgstr ""
+
+#: inc/customizer.php:59 inc/customizer.php:80 inc/customizer.php:102
+#: inc/customizer.php:104
+msgid "Right"
+msgstr ""
+
+#: inc/customizer.php:75
+msgid "Post sidebar position"
+msgstr ""
+
+#: inc/customizer.php:81 inc/customizer.php:105
+msgid "None"
+msgstr ""
+
+#: inc/extras.php:58
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: inc/template-tags.php:26
+msgid "Older posts"
+msgstr ""
+
+#: inc/template-tags.php:30
+msgid "Newer posts"
+msgstr ""
+
+#: inc/template-tags.php:58
+msgid "<span class=\"meta-nav\">Previous article</span> %title "
+msgstr ""
+
+#: inc/template-tags.php:59
+msgid "<span class=\"meta-nav\">Next article</span> %title "
+msgstr ""
+
+#: inc/template-tags.php:89
+#, php-format
+msgid "by %s"
+msgstr ""
+
+#: inc/template-tags.php:106
+msgid ", "
+msgstr ""
+
+#: inc/template-tags.php:108
+#, php-format
+msgid "In %1$s"
+msgstr ""
+
+#: inc/template-tags.php:122
+msgid "Leave a comment"
+msgstr ""
+
+#: inc/template-tags.php:122
+msgid "1 Comment"
+msgstr ""
+
+#: inc/template-tags.php:122
+msgid "% Comments"
+msgstr ""
+
+#: inc/template-tags.php:125 inc/template-tags.php:162
+#: template-parts/content-featured-posts.php:39
+#: template-parts/content-featured-posts.php:72
+#: template-parts/content-jetpack-portfolio.php:28
+#: template-parts/content-page.php:29 template-parts/content.php:23
+#: template-parts/content.php:36
+msgid "Edit"
+msgstr ""
+
+#: inc/template-tags.php:141 inc/template-tags.php:159
+#: inc/template-tags.php:178
+#, php-format
+msgid "%1$s"
+msgstr ""
+
+#: inc/template-tags.php:197
+#, php-format
+msgid "Category: %s"
+msgstr ""
+
+#: inc/template-tags.php:199
+#, php-format
+msgid "Tag: %s"
+msgstr ""
+
+#: inc/template-tags.php:201
+#, php-format
+msgid "Author: %s"
+msgstr ""
+
+#: inc/template-tags.php:203
+#, php-format
+msgid "Year: %s"
+msgstr ""
+
+#: inc/template-tags.php:203
+msgid "Y"
+msgstr ""
+
+#: inc/template-tags.php:205
+#, php-format
+msgid "Month: %s"
+msgstr ""
+
+#: inc/template-tags.php:205
+msgid "F Y"
+msgstr ""
+
+#: inc/template-tags.php:207
+#, php-format
+msgid "Day: %s"
+msgstr ""
+
+#: inc/template-tags.php:207
+msgid "F j, Y"
+msgstr ""
+
+#: inc/template-tags.php:210
+msgid "Asides"
+msgstr ""
+
+#: inc/template-tags.php:212
+msgid "Galleries"
+msgstr ""
+
+#: inc/template-tags.php:214
+msgid "Images"
+msgstr ""
+
+#: inc/template-tags.php:216
+msgid "Videos"
+msgstr ""
+
+#: inc/template-tags.php:218
+msgid "Quotes"
+msgstr ""
+
+#: inc/template-tags.php:220
+msgid "Links"
+msgstr ""
+
+#: inc/template-tags.php:222
+msgid "Statuses"
+msgstr ""
+
+#: inc/template-tags.php:224
+msgid "Audio"
+msgstr ""
+
+#: inc/template-tags.php:226
+msgid "Chats"
+msgstr ""
+
+#: inc/template-tags.php:229
+#, php-format
+msgid "Archives: %s"
+msgstr ""
+
+#: inc/template-tags.php:233
+#, php-format
+msgid "%1$s: %2$s"
+msgstr ""
+
+#: inc/template-tags.php:235
+msgid "Archives"
+msgstr ""
+
+#: search.php:17
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: template-parts/content-jetpack-portfolio-single.php:22
+#: template-parts/content-jetpack-portfolio.php:34
+#: template-parts/content-page.php:24 template-parts/content-single.php:22
+msgid "Pages:"
+msgstr ""
+
+#: template-parts/content-none.php:19
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
