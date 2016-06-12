@@ -1,0 +1,166 @@
+.comment-content {
+  a {
+    word-wrap: break-word;
+  }
+  blockquote, p.pullquote {
+    margin-left: 0;
+    padding-left: 1em;
+  }
+}
+
+.bypostauthor {
+  display: block;
+}
+
+.comment-list {
+  list-style: none;
+  padding: 0;
+  .avatar {
+    margin-right: 0.4em;
+  }
+  .children {
+    list-style: none;
+    padding-left: 0;
+    .depth-2 {
+      border-left: 1px solid #eee;
+      padding-left: 1.5em;
+    }
+    .comment-body {
+      background-color: #fcfcfc;
+    }
+  }
+}
+
+.comment-body {
+  margin-bottom: 2em;
+  padding: 0.7em 1em;
+  border: 1px solid #eee;
+  position: relative;
+  border-radius: 3px;
+  background-color: #fefefe;
+}
+
+.comment-metadata {
+  @include font-size(0.75);
+  position: absolute;
+  top: 1em;
+  left: 5em;
+}
+
+.comment-author {
+  margin-top: 0.5em;
+}
+
+.says {
+  @include font-size(0.875);
+}
+
+.reply {
+  @include font-size(0.875);
+  font-weight: bold;
+}
+
+.comment-content {
+  @include font-size(0.875);
+  p:first-of-type {
+    margin-top: 0.2em;
+  }
+}
+
+.comment-form-comment, .logged-in-as {
+  margin-top: 0.7em;
+}
+
+.comments-area {
+  margin-top: 2em;
+}
+
+.comment-reply-title {
+  font-family: inherit;
+}
+
+.comment-form {
+  .form-submit {
+    text-align: right;
+    margin-top: 0.5em;
+  }
+}
+
+.comment-navigation {
+  .nav-previous {
+
+  }
+  .nav-next {
+
+  }
+}
+
+#cancel-comment-reply-link {
+  font-size: 12px;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 2px 4px;
+  vertical-align: middle;
+}
+
+li .comment-respond {
+  padding: 0 1em 1em;
+}
+
+.logged-in-as {
+  @include font-size(1);
+}
+
+.comments-title {
+  font-family: inherit;
+  font-weight: normal;
+  @include font-size(1.158);
+  margin-top: 3.5em;
+  span {
+    font-weight: bold;
+    color: $color__link;
+  }
+}
+
+.comment-awaiting-moderation {
+  color: #60D24D;
+  margin-top: 0.5em;
+}
+
+@media only screen and (min-width: 40.063em) {
+  .comment-list {
+    .avatar {
+      position: absolute;
+      left: -50px;
+      top: 0;
+      margin-right: 0;
+    }
+  }
+  .comment-metadata {
+    left: 1.5em;
+  }
+  .comment-body {
+    margin-left: 50px;
+    &:before {
+      width: 0;
+      height: 0;
+      border-style: solid;
+      border-width: 10px 12px 10px 0;
+      border-color: transparent #eee transparent transparent;
+      content: "";
+      position: absolute;
+      left: -12px;
+      top: 7px;
+    }
+  }
+  .comment-author {
+    margin-top: 1.2em;
+  }
+  .comment-list {
+    padding-left: 1em;
+    .depth-2 {
+      padding-left: 0;
+      border: none;
+    }
+  }
+}

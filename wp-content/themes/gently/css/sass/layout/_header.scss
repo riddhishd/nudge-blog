@@ -1,0 +1,110 @@
+.site-title {
+  margin: 0;
+  a {
+    line-height: 50px;
+    display: inline-block;
+    vertical-align: bottom;
+  }
+}
+
+.site-logo {
+  max-height: 50px;
+  display: block;
+  width: auto;
+}
+
+@media all and (min-width: 1066px) {
+  .site-header {
+    min-height: 64px;
+  }
+  .site-title {
+    a {
+      line-height: 64px;
+    }
+  }
+  .site-logo {
+    max-height: 64px;
+  }
+  .header-search {
+    margin-top: 7px;
+  }
+}
+
+.site-branding {
+  display: inline-block;
+  padding-left: 10px;
+}
+
+.site-header {
+  border-bottom: 1px solid #fff;
+}
+
+.top-bar {
+  margin-bottom: -6px;
+}
+
+.header-image {
+  overflow: hidden;
+  img {
+    width: 100%;
+    display: block;
+  }
+}
+
+.header-search {
+  float: right;
+  height: 50px;
+  margin-left: 10px;
+  button {
+    background: none;
+    border: 0;
+    padding: 0;
+    margin: 5px 9px;
+    font-size: 28px;
+    &:focus i {
+      color: inherit;
+    }
+  }
+  i {
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 28px;
+    border: none;
+    color: #147BB2;
+    padding: 5px 6px;
+    vertical-align: middle;
+    box-shadow: none;
+    &.btn {
+      background: none;
+    }
+  }
+  & > div {
+    display: inline-block;
+    float: left;
+    overflow: hidden;
+    width: 1px;
+    visibility: hidden;
+    margin: 0 1px 0 0;
+    height: 50px;
+    transition: width 250ms ease-out;
+  }
+  form {
+    width: 255px;
+    input[type="submit"], label {
+      display: inline-block;
+    }
+    input[type="search"] {
+      height: 24px;
+    }
+    label {
+      margin-top: 8px;
+      margin-right: 4px;
+    }
+  }
+  &.search-open {
+    & > div {
+      visibility: visible;
+      width: 270px;
+    }
+  }
+}

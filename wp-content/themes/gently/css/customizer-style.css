@@ -1,0 +1,55 @@
+.customize-control {
+  margin-bottom: 2em; }
+
+.customize-control-color {
+  margin-bottom: 1.5em; }
+
+.customize-control-slider {
+  margin-bottom: 0.5em; }
+
+#customize-control-logo_image_retina, #customize-control-logo_font_color, #customize-control-body_text_color, #customize-control-header_features, #customize-control-nav_menu_locations-secondary, #customize-control-footer_border {
+  padding-bottom: 2em;
+  border-bottom: 5px solid #F4F4F4; }
+
+.attachment-thumb {
+  width: auto !important;
+  display: block;
+  margin: 0 auto; }
+
+.customize-control-title {
+  color: #147BB2;
+  margin-bottom: 0.5em; }
+
+.customize-control-background .actions, .customize-control-header .actions, .customize-control-image .actions, .customize-control-media .actions, .customize-control-upload .actions {
+  margin-bottom: 0; }
+
+.customize-control-slider input[type="text"] {
+  font-weight: bold; }
+
+#customize-control-header_icons_color_original, #customize-control-newsletter_use {
+  margin-top: -1em;
+  font-weight: bold; }
+  #customize-control-header_icons_color_original input, #customize-control-newsletter_use input {
+    margin-right: 5px; }
+
+#customize-control-newsletter_use {
+  margin-top: 1em; }
+
+.description {
+  font-weight: normal;
+  margin-top: 0;
+  margin-bottom: 0.9em; }
+
+span.description {
+  font-style: normal; }
+
+#customize-control-sidebar_collapse label input {
+  margin-right: 5px; }
+
+#customize-control-install_notice {
+  display: none !important; }
+
+#accordion-section-notice .description {
+  font-size: 16px; }
+
+/*# sourceMappingURL=customizer-style.css.map */

@@ -1,0 +1,27 @@
+= 1.0 - July 8 2015 =
+* Initial release.
+
+= 1.0.1 - November 23 2015 =
+* Removed fallback functions, obsolete in WordPress 4.3.
+* CSS changes in overall font size.
+* Minor coding standards improvements.
+* Unified text domain 'gently'.
+
+= 1.0.2 - December 09 2015 =
+* Corrected accessibility issues in navigation.
+* Removed custom favicon setting from customizer.
+* Fixed sidebar 'snapping' on scroll when using the header image.
+* Fixed header social icons and share buttons.
+* Featured images are using now srcset and sizes attributes.
+* Updated MailChimp deprecated function.
+* Removed RICG Responsive Images plugin from recommended list.
+* Kirki customizer plugin is not labeled as required, but still essential.
+
+= 1.0.3 - December 20 2015 =
+* Many improvements in terms of accessibility
+* Default colors changed due to contrast issues
+
+= 1.1 - March 31 2016 =
+* Corrected deprecated fields for Kirki plugin.
+* Contact Form 7 is no longer a recommended plugin, it's just not used by any specific theme functionality.
+* Added support for new WP custom logo option.

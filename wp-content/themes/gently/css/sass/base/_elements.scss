@@ -1,0 +1,125 @@
+html {
+  box-sizing: border-box;
+  min-height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  /* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
+  box-sizing: inherit;
+}
+
+body {
+  background: $color__background-body; /* Fallback for when there is no custom background color defined. */
+  overflow-x: hidden;
+  min-height: 100%;
+}
+
+blockquote, q {
+  quotes: "" "";
+
+  &:before,
+  &:after {
+    content: "";
+  }
+}
+
+hr {
+  background-color: $color__background-hr;
+  border: 0;
+  height: 1px;
+  margin-bottom: 1.5em;
+}
+
+img {
+  height: auto; /* Make sure images are scaled correctly. */
+  max-width: 100%; /* Adhere to container width. */
+}
+
+figure {
+  margin: auto;
+}
+
+/* LINKS */
+a {
+  color: $color__link;
+
+  &:visited {
+    color: $color__link-visited;
+  }
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color__link-hover;
+  }
+  &:focus {
+    outline: thin dotted;
+  }
+  &:hover,
+  &:active {
+    outline: 0;
+  }
+}
+
+/* LISTS */
+
+ul, ol {
+  margin: $margin__content 0;
+  padding-left: 1.5em;
+  line-height: $font__line-height-body * 1.16;
+}
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-top: 0.5em;
+}
+
+dt {
+  font-weight: bold;
+}
+
+dd {
+  margin: 0 ($margin__content * 0.65) $margin__content;
+}
+
+/* TABLES */
+
+table {
+  margin: 0 0 1.5em;
+  width: 100%;
+}
+
+th {
+  text-align: left;
+  border-bottom: 1px solid;
+  padding: 0.5em 0.65em;
+  border-right: 1px solid;
+
+  &:last-child {
+    border-right: none;
+  }
+}
+
+tfoot th {
+  border-bottom: none;
+}
+
+td {
+  border-right: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+  padding: 0.5em 0.65em;
+  font-size: 0.9em;
+  &:last-child {
+    border-right: none;
+  }
+}
